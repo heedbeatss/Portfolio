@@ -1,0 +1,608 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+
+/* Remover pontos das listas */
+ul {
+    list-style: none;
+}
+
+/* Menu */
+/* Menu */
+.menu {
+    background-color: black;
+    color: #fff;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu__img {
+    padding-top: 5px;
+    padding-left: 5px;
+
+}
+
+.menu__title {
+    margin-left: 1rem;
+}
+
+.menu__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu__item {
+    position: relative;
+}
+
+.menu__item:not(:last-child)::after {
+    content: '|';
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.menu__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu__contact {
+    margin-left: auto;
+}
+
+.menu__email {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Hero */
+.hero {
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px; /* Ajuste o valor conforme necessário */
+    width: 100%;
+}
+
+.hero__profile {
+    border-radius: 50%;
+    width: 115px;
+    height: 150px;
+    margin-left: 1rem; /* Agora adiciona um espaçamento à esquerda */
+    order: 2; /* Altera a ordem para a foto do perfil ficar à direita */
+}
+
+.hero__bio {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.hero__subsection {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.hero__network {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero__network-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* About */
+.about {
+    padding: 2rem 1rem;
+    background-color: #EAF2FD;
+}
+
+.about__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.about__paragraph {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Skills */
+.skills {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+}
+
+.skills__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.skills__line {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skills__box {
+    text-align: center;
+}
+
+.skills__card {
+    background-color: #e0e0e0; /* Cor do card */
+    padding: 1rem;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.skills__item {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.skills__name {
+    font-size: 1rem;
+}
+
+/* Hobbies */
+.hobbies {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+}
+
+.hobbies__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hobbies__line {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hobbies__box {
+    text-align: center;
+}
+
+.hobbies__card {
+    background-color: #e0e0e0; /* Cor do card */
+    padding: 1rem;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.hobbies__item {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.hobbies__name {
+    font-size: 1rem;
+}
+
+
+/* Academic */
+.academic {
+    padding: 2rem 1rem;
+    background-color: #EAF2FD;
+}
+
+.academic__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.academic__courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.academic__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 25%;
+ 
+}
+
+.academic__list {
+    list-style: none;
+    
+}
+
+.academic__item {
+    width: 500px;
+    height: auto;
+    padding-left: 1.5%;
+}
+
+.academic__name {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.academic__subtitle {
+    font-size: 0.9rem;
+}
+
+.academic__subtitle a {
+    color: #1e90ff; /* Define a cor do link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+.academic__subtitle a:hover {
+    text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+
+
+
+/* Experiência */
+.experience {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+}
+
+.experience__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.experience__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.experience__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.experience__img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.experience__info {
+    flex: 1;
+    padding: 1rem;
+}
+
+.experience__name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience__text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.experience__description {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.experience__button--repo, .experience__button--demo {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+}
+
+.experience__box--left {
+    flex-direction: row;
+}
+
+.experience__box--right {
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+/* Estilos para o formulário de contato */
+.formcontato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+    
+}
+
+.formcontato__contacto {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20%;
+}
+
+.formcontato--esquerda {
+    margin-right: 2rem;
+}
+
+.formcontato__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.formcontato__text {
+    max-width: 400px;
+}
+
+.formcontato__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.formcontato__subtext {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.formcontato__form {
+    margin-top: 1rem;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formcontato__textarea {
+    resize: vertical;
+}
+
+.formcontato__botao {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formcontato__botao:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #000; /* Define a cor de fundo preta */
+    color: #fff; /* Define a cor do texto como branco */
+    padding: 2rem 1rem; /* Adiciona algum espaçamento interno */
+}
+
+.footer__rodape {
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.footer__rodape p {
+    margin: 0; /* Remove as margens padrão dos parágrafos */
+}
+
+
+
+@media (max-width: 768px) {
+    .experience__box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience__box--left, .experience__box--right {
+        flex-direction: column;
+    }
+
+    .experience__img {
+        margin: 0 auto 1rem;
+    }
+
+    .experience__info {
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+/* :root{ */
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   /* --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+} */
+
+/* body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+} */
+
+/* ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+} */
+
+/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
+de utiliza-la. 
+
+Mas o que é o BEM?
+
+BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
+web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
+Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
+de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
+
+Link da documentação oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sessão Menu*/
+/* 
+section.menu{
+
+} */
+
+/*Sessão Title*/
+/* 
+section.title{
+
+} */
+
+/*Sessão About*/
+
+/* section.about{
+
+}
+
+/*Sessão Hobbies*/
+
+/* section.hobbies{
+    
+} */
+
+/* Experiência Acadêmica*/
+/* 
+section.academic{
+
+} */
+
+/* experiência*/
+
+/* section.experience{
+
+} */
+
+/*Contato*/
+
+/* section.formcontato{
+
+} */
+
+/*footeer*/
+
+/* section.footer{
+   
+} */ 
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+/* @media (min-width: 768px) { */
+
+/* Menu */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+/* } */
+
+/*Mobile*/
+/* @media (min-width: 425px) { */
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
+/* } */
