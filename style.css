@@ -449,24 +449,7 @@ ul {
 
 
 
-@media (max-width: 768px) {
-    .experience__box {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .experience__box--left, .experience__box--right {
-        flex-direction: column;
-    }
-
-    .experience__img {
-        margin: 0 auto 1rem;
-    }
-
-    .experience__info {
-        padding: 0;
-    }
-}
 
 /* Media Queries para Tablets */
 @media only screen and (max-width: 1366px) {
@@ -530,7 +513,8 @@ ul {
     }
 
     .hero__container {
-        flex-direction: column;
+        margin-left: 13rem;
+        flex-direction: row;
         align-items: center;
         text-align: center;
         max-width: 100%;
@@ -538,8 +522,8 @@ ul {
     }
 
     .hero__profile {
-        order: 0;
-        margin-left: 0;
+        order: 1;
+        margin-right: 10rem;
         margin-bottom: 1rem;
     }
 
@@ -656,15 +640,27 @@ ul {
     }
 
     /* Sessão de experiência */
+
     .experience__box {
+        flex-direction: column;
+        text-align: center;
         padding: 0.5rem; /* Ajusta o padding */
     }
 
+    .experience__box--left, .experience__box--right {
+        flex-direction: column;
+    }
+
     .experience__img {
+        margin: 0 auto 1rem;
         width: auto; /* Ajusta a largura das imagens */
         height: 50px; /* Ajusta a altura das imagens */
     }
 
+    .experience__info {
+        padding: 0;
+    }
+}
     /* Contato */
     .formcontato {
         padding: 1rem 5rem;
@@ -723,145 +719,3 @@ ul {
         padding: 0.5rem;
         border-radius: 4px;
     }
-    }
-
-
-
-
-
-
-
-
-
-
-/*CSS Reset / Normalize*/
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
-/* :root{ */
-    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   /* --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
-} */
-
-/* body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-} */
-
-/* ol, ul,li {
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: var(--cor-de-link);
-} */
-
-/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
-de utiliza-la. 
-
-Mas o que é o BEM?
-
-BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
-web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
-Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
-de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
-
-Link da documentação oficial!
-https://en.bem.info/methodology/quick-start/*/
-
-/*Sessão Menu*/
-/* 
-section.menu{
-
-} */
-
-/*Sessão Title*/
-/* 
-section.title{
-
-} */
-
-/*Sessão About*/
-
-/* section.about{
-
-}
-
-/*Sessão Hobbies*/
-
-/* section.hobbies{
-    
-} */
-
-/* Experiência Acadêmica*/
-/* 
-section.academic{
-
-} */
-
-/* experiência*/
-
-/* section.experience{
-
-} */
-
-/*Contato*/
-
-/* section.formcontato{
-
-} */
-
-/*footeer*/
-
-/* section.footer{
-   
-} */ 
-
-/* Chegou a hora de se desafiar com a responsividade, 
-utilize como referência os breakpoints @media abaixo*/
-
-/*Tablet*/
-/* @media (min-width: 768px) { */
-
-/* Menu */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Experiências acadêmicas*/
-
-/*Expeirência profissional*/
-
-/* } */
-
-/*Mobile*/
-/* @media (min-width: 425px) { */
-
-/*Menu*/
-
-/*Titulo*/
-
-/*Sessão sobre*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formação Acadêmica*/
-
-/*Experiência Profissional*/
-
- /*Contato*/
-
-/*Footer*/
-
-/* } */
