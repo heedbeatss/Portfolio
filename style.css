@@ -452,7 +452,7 @@ ul {
 
 
 /* Media Queries para Tablets */
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1370px) {
 
         /* Menu */
     .menu {
@@ -513,11 +513,10 @@ ul {
     }
 
     .hero__container {
-        margin-left: 13rem;
+        margin-left: 0rem;
         flex-direction: row;
         align-items: center;
         text-align: center;
-        max-width: 100%;
         width: 100%;
     }
 
@@ -525,6 +524,10 @@ ul {
         order: 1;
         margin-right: 10rem;
         margin-bottom: 1rem;
+    }
+
+    .about__paragraph {
+        font-size: larger;
     }
 
     .skills__line, .hobbies__line {
@@ -565,6 +568,10 @@ ul {
         height: 400px;
     }
 
+    .experience__text {
+        font-size: larger;
+    }
+
     .formcontato {
         padding-left: 20rem;
     }
@@ -580,7 +587,6 @@ ul {
     /* Estilos gerais */
     body {
         font-size: 14px; /* Reduz o tamanho da fonte */
-        width: 100%;
     }
 
     /* Menu */
@@ -603,20 +609,25 @@ ul {
     .hero__container {
         text-align: center; /* Centraliza o texto */
         padding: 1rem; /* Ajusta o padding */
+        width: auto;
     }
 
     .hero__profile {
         width: 80px; /* Ajusta a largura da imagem de perfil */
         height: 100px; /* Ajusta a altura da imagem de perfil */
-        margin-right: 70%;
+        margin-right: 0rem;
     }
 
     .hero__bio {
-        font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
     }
 
     .hero__subsection {
-        font-size: 1rem; /* Ajusta o tamanho da fonte */
+        font-size: 0.8rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .about__paragraph {
+        font-size: small;
     }
 
     /* Sessão de habilidades e hobbies */
