@@ -173,17 +173,42 @@ ul {
     padding: 1rem;
     border-radius: 8px; /* Cantos arredondados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-decoration: none;
+    position: relative;
 }
+
+.skills__card:hover {
+    background-color: blue; /* Cor do card */
+    padding: 1rem;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    cursor: pointer;
+}
+
 
 .skills__item {
     width: 100px;
     height: 50px;
     margin-bottom: 0.5rem;
+    
 }
 
-.skills__name {
-    font-size: 1rem;
+
+.skills__link {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
+
 
 /* Hobbies */
 .hobbies {
@@ -399,13 +424,18 @@ ul {
     margin-top: 1rem;
 }
 
+input {
+    border-radius: 10px;
+}
+
+
 .formcontato__input,
 .formcontato__textarea {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1rem;
 }
 
@@ -418,7 +448,7 @@ ul {
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -427,6 +457,8 @@ ul {
 .formcontato__botao:hover {
     background-color: #0056b3;
 }
+
+/* FOOTER */
 
 .footer {
     margin: 0;
