@@ -8,6 +8,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
+    
 }
 
 /* Remover pontos das listas */
@@ -175,7 +176,7 @@ ul {
 }
 
 .skills__item {
-    width: 50px;
+    width: 100px;
     height: 50px;
     margin-bottom: 0.5rem;
 }
@@ -214,7 +215,7 @@ ul {
 }
 
 .hobbies__item {
-    width: 50px;
+    width: 150px;
     height: 50px;
     margin-bottom: 0.5rem;
 }
@@ -280,8 +281,6 @@ ul {
     text-decoration: underline; /* Adiciona sublinhado no hover */
 }
 
-
-
 /* Experiência */
 .experience {
     padding: 2rem 1rem;
@@ -312,8 +311,8 @@ ul {
 }
 
 .experience__img {
-    width: 350px;
-    height: auto;
+    width: auto;
+    height: 350px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -356,10 +355,6 @@ ul {
 .experience__box--right {
     flex-direction: row-reverse;
 }
-
-
-
-
 
 /* Estilos para o formulário de contato */
 .formcontato {
@@ -433,11 +428,15 @@ ul {
     background-color: #0056b3;
 }
 
-/* Footer */
 .footer {
-    background-color: #000; /* Define a cor de fundo preta */
-    color: #fff; /* Define a cor do texto como branco */
-    padding: 2rem 1rem; /* Adiciona algum espaçamento interno */
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
 }
 
 .footer__rodape {
@@ -468,6 +467,266 @@ ul {
         padding: 0;
     }
 }
+
+/* Media Queries para Tablets */
+@media only screen and (max-width: 1366px) {
+
+        /* Menu */
+    .menu {
+        background-color: black;
+        color: #fff;
+    }
+
+    .menu__header {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .menu__img {
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+    .menu__title {
+        margin-left: 1rem;
+    }
+
+    .menu__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .menu__list {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .menu__item {
+        position: relative;
+    }
+
+    .menu__item:not(:last-child)::after {
+        content: '|';
+        color: #fff;
+        margin-left: 1rem;
+    }
+
+    .menu__link {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .menu__contact {
+        margin-left: auto;
+    }
+
+    .menu__email {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .hero__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hero__profile {
+        order: 0;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .skills__line, .hobbies__line {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills__box, .hobbies__box {
+        flex: 1 1 calc(33.333% - 1rem);
+        margin-bottom: 1rem;
+    }
+
+    .academic__courses {
+        flex-direction: row;
+    }
+
+    .academic__box {
+        flex-direction: row;
+        align-items: center;
+        padding-left: 0;
+        gap: 2rem;
+    }
+
+    .academic__item {
+        width: 80%;
+        padding-left: 0;
+        
+    }
+
+    .experience__box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience__img {
+        width: auto;
+        height: 400px;
+    }
+
+    .formcontato {
+        padding-left: 20rem;
+    }
+
+    .formcontato__img {
+        display: none; 
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* Estilos gerais */
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+        width: 100%;
+    }
+
+    /* Menu */
+
+    .menu {
+       height: 50px;
+    }
+
+    .menu__list {
+        align-items: center; /* Centraliza os itens do menu */
+        display: none;
+        gap: 0.3rem; /* Ajusta o espaçamento entre os itens do menu */
+    }
+
+    .menu__item:not(:last-child)::after {
+        content: none; /* Remove o separador de itens do menu */
+    }
+
+    /* Hero */
+    .hero__container {
+        text-align: center; /* Centraliza o texto */
+        padding: 1rem; /* Ajusta o padding */
+    }
+
+    .hero__profile {
+        width: 80px; /* Ajusta a largura da imagem de perfil */
+        height: 100px; /* Ajusta a altura da imagem de perfil */
+        margin-right: 70%;
+    }
+
+    .hero__bio {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .hero__subsection {
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+    }
+
+    /* Sessão de habilidades e hobbies */
+    .skills__line, .hobbies__line {
+        gap: 0.5rem; /* Ajusta o espaçamento entre os itens */
+    }
+
+    .skills__box, .hobbies__box {
+        width: 100%; /* Ajusta a largura dos boxes */
+    }
+
+    /* Sessão acadêmica */
+    .academic__box {
+        padding-left: 0; /* Remove o padding esquerdo */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .academic__item {
+        width: 90%; /* Ajusta a largura dos itens */
+    }
+
+    /* Sessão de experiência */
+    .experience__box {
+        padding: 0.5rem; /* Ajusta o padding */
+    }
+
+    .experience__img {
+        width: auto; /* Ajusta a largura das imagens */
+        height: 50px; /* Ajusta a altura das imagens */
+    }
+
+    /* Contato */
+    .formcontato {
+        padding: 1rem 5rem;
+        background-color: #EAF2FD;
+    }
+
+    .formcontato__contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .formcontato--esquerda {
+        flex: 1;
+        margin-right: 2rem;
+    }
+
+    .formcontato__img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .formcontato__text {
+        flex: 1;
+        width: auto;
+    }
+
+    .formcontato__title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .formcontato__subtext {
+        font-size: 0.6rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .formcontato__form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .formcontato__label {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .formcontato__input,
+    .formcontato__textarea {
+        padding: 0.5rem;
+        border-radius: 4px;
+    }
+    }
+
+
+
 
 
 
